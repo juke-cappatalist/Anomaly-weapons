@@ -1,0 +1,248 @@
+;------------------------------------------------------------------------------------------------
+[wpn_fal]:identity_immunities,weapon_probability,default_weapon_params,wpn_fal_sounds
+GroupControlSection                      = spawn_group
+$npc                                     = on
+$prefetch                                = 8
+$spawn                                   = "weapons\fal"
+scheduled                                = off
+cform                                    = skeleton
+parent_section                           = wpn_fal
+
+class                                    = WP_AK74
+slot                                     = 2
+animation_slot                           = 2
+ef_main_weapon_type                      = 2
+ef_weapon_type                           = 6
+hand_dependence                          = 1
+single_handed                            = 0
+
+icons_texture                            = ui\ui_icon_fal
+inv_grid_height                          = 2
+inv_grid_width                           = 6
+inv_grid_x                               = 0
+inv_grid_y                               = 0
+inv_name                                 = st_wpn_fal
+inv_name_short                           = st_wpn_fal
+description                              = st_wpn_fal_descr
+
+kind                                     = w_rifle
+inv_weight                               = 4.45
+cost                                     = 31300
+repair_type                              = rifle_7
+weapon_class                             = assault_rifle
+
+hud                                      = wpn_fal_hud
+visual                                   = dynamics\weapons\wpn_fal\wpn_fal_world.ogf
+position                                 = -0.025522, -0.028102, -0.0187
+orientation                              = 0, 0, 0
+fire_point                               = -0.00313, 0.080689, 0.753812
+fire_point2                              = 0, 0.097, 0.722
+strap_bone0                              = bip01_spine2
+strap_bone1                              = bip01_spine1
+strap_position                           = -0.210247, -0.155589, 0.202926
+strap_orientation                        = -15, -9, 110
+ph_mass                                  = 4
+
+flame_particles                          = weapons\generic_weapon05
+smoke_particles                          = weapons\generic_shoot_00
+grenade_flame_particles                  = weapons\generic_weapon01
+
+shell_point				                 = -0.026179, 0.080112, 0.133048
+shell_dir				                 = 0, 0, 0.4
+shell_particles				             = weapons\762x39
+
+light_disabled                           = false
+light_color                              = 0.6, 0.5, 0.3
+light_range                              = 5
+light_time                               = 0.2
+light_var_color                          = 0.05
+light_var_range                          = 0.5
+
+upgrades                                 = up_gr_firstab_sig550, up_gr_seconab_sig550, up_gr_thirdab_sig550, up_gr_fourtab_sig550, up_gr_fifthab_sig550
+installed_upgrades                       =
+upgrade_scheme                           = upgrade_scheme_sig550
+upgr_icon_path                           = ui\ui_icon_fal
+upgr_icon_x                              = 0
+upgr_icon_y                              = 100
+upgr_icon_width                          = 300
+upgr_icon_height                         = 100
+
+fire_modes                               = 1, 3, -1
+ammo_class                               = ammo_7.62x51_fmj, ammo_7.62x51_fmj_bad, ammo_7.62x51_fmj_verybad, ammo_7.62x51_ap, ammo_7.62x51_ap_bad, ammo_7.62x51_ap_verybad
+ammo_current                             = 120
+ammo_elapsed                             = 20
+ammo_limit                               = 140
+ammo_mag_size                            = 20
+startup_ammo                             = 90
+
+scopes                                   = 
+scope_status                             = 0
+scope_zoom_factor                        = 0
+
+silencer_name                            = wpn_sil_762nato
+silencer_status                          = 2
+silencer_x                               = 265
+silencer_y                               = 8
+silencer_light_color                     = 0.6, 0.5, 0.3
+silencer_light_range                     = 0.01
+silencer_light_time                      = 0.2
+silencer_light_var_color                 = 0.05
+silencer_light_var_range                 = 0.5
+silencer_smoke_particles                 = weapons\generic_shoot_00
+
+grenade_class                            = ammo_m209, ammo_m209_bad, ammo_m209_verybad
+grenade_launcher_name                    = wpn_addon_grenade_launcher_m203
+grenade_launcher_status                  = 0
+grenade_launcher_x                       = 133
+grenade_launcher_y                       = 34
+grenade_vel                              = 76
+launch_speed                             = 76
+
+hit_impulse                              = 35
+hit_power                                = 0.76, 0.76, 0.76, 0.76
+hit_type                                 = fire_wound
+fire_distance                            = 1000
+bullet_speed                             = 840
+rpm                                      = 675
+rpm_empty_click                          = 200
+
+use_aim_bullet = false
+time_to_aim                              = 0.0 ;  3.0
+zoom_dof                                 = 0.5, 1, 180
+zoom_enabled                             = true
+zoom_rotate_time                         = 0.2
+reload_dof                               = 0, 0.5, 5, 2
+control_inertion_factor = 1.0f
+crosshair_inertion                       = 6.75
+fire_dispersion_base                     = 0.21
+fire_dispersion_condition_factor         = 0.001
+
+misfire_probability                      = 0.005
+misfire_start_condition                  = 0.7 ;  0.6
+misfire_start_prob                       = 0.003
+misfire_end_condition                    = 0.1
+misfire_end_prob                         = 0.045
+
+condition_queue_shot_dec                 = 0.0015
+condition_shot_dec                       = 0.0015
+
+cam_return                               = 0
+cam_relax_speed                          = 5
+cam_dispersion                           = 1.5
+cam_dispersion_frac                      = 1.0
+cam_dispersion_inc                       = 0.0775
+cam_max_angle                            = 50.0
+cam_max_angle_horz                       = 50.0
+cam_step_angle_horz                      = 1.5
+zoom_cam_relax_speed                     = 5
+zoom_cam_dispersion                      = 1.2
+zoom_cam_dispersion_frac                 = 0.7
+zoom_cam_dispersion_inc                  = 0.0675
+zoom_cam_max_angle                       = 50.0
+zoom_cam_max_angle_horz                  = 50.0
+zoom_cam_step_angle_horz                 = 1.3
+
+PDM_disp_accel_factor                    = 2.0
+PDM_disp_base                            = 0.5
+PDM_disp_crouch                          = 1.0
+PDM_disp_crouch_no_acc                   = 1.0
+PDM_disp_vel_factor                      = 2.0
+
+cam_relax_speed_ai                       = 360
+zoom_cam_relax_speed_ai                  = 360
+holder_fov_modifier                      = 1.0
+holder_range_modifier                    = 1.0
+min_radius                               = 30
+max_radius                               = 50
+
+kill_msg_x                               = 80
+kill_msg_y                               = 59
+kill_msg_width                           = 87
+kill_msg_height                          = 24
+
+snd_reload						= weapons\librarian_fal\reload
+snd_reload_empty				= weapons\librarian_fal\reload_empty
+snd_reload_misfire				= weapons\librarian_fal\unjam
+
+[wpn_fal_hud]:hud_base
+item_visual                              = anomaly_weapons\wpn_fal\wpn_fal_hud.ogf
+attach_place_idx                         = 0
+zoom_hide_crosshair                      = true   
+
+item_position                            = 0, 0, 0
+item_orientation                         = 0, 0, 0
+
+aim_hud_offset_pos               = -0.072312, 0.035002, -0.057847
+aim_hud_offset_pos_16x9          = -0.072312, 0.035002, -0.057847
+aim_hud_offset_rot               = 0.001361, 0, 0.000354
+aim_hud_offset_rot_16x9          = 0.001361, 0, 0.000354
+
+hands_orientation                = 0.001, -0.001, -0.001
+hands_orientation_16x9           = 0.001, -0.001, -0.001
+hands_position                   = -0.052364, 0.012235, -0.000288
+hands_position_16x9              = -0.052364, 0.012235, -0.000288
+
+lowered_hud_offset_pos           = 0.10349, -0.013454, 0
+lowered_hud_offset_pos_16x9      = 0.10349, -0.013454, 0
+		
+gl_hud_offset_pos                        = 0, 0, 0
+gl_hud_offset_pos_16x9                   = 0, 0, 0
+gl_hud_offset_rot                        = 0, 0, 0
+gl_hud_offset_rot_16x9                   = 0, 0, 0
+
+lean_hud_offset_pos                      = 0, 0, 0
+lean_hud_offset_rot                      = 0, 0, 0
+
+anm_hide                                 = fal_hand_holster, fal_idle
+anm_hide_empty                           = fal_hand_holster, fal_idle_empty
+anm_idle                                 = fal_hand_idle, fal_idle
+anm_idle_aim                             = fal_hand_idle_aim, fal_idle
+anm_idle_aim_empty                       = fal_hand_idle_aim, fal_idle_empty
+anm_idle_aim_moving                      = fal_hand_moving, fal_idle, 0.75
+anm_idle_aim_moving_crouch               = fal_hand_moving, fal_idle, 0.75
+anm_idle_aim_moving_crouch_empty         = fal_hand_moving, fal_idle_empty, 0.75
+anm_idle_aim_moving_empty                = fal_hand_moving, fal_idle_empty, 0.75
+anm_idle_empty                           = fal_hand_idle, fal_idle_empty
+anm_idle_moving                          = fal_hand_moving, fal_idle
+anm_idle_moving_crouch                   = fal_hand_moving, fal_idle, 0.75
+anm_idle_moving_crouch_empty             = fal_hand_moving, fal_idle, 0.75
+anm_idle_moving_empty                    = fal_hand_moving, fal_idle_empty, 0.75
+anm_idle_sprint                          = fal_hand_sprint, fal_idle, 1.1
+anm_idle_sprint_empty                    = fal_hand_sprint, fal_idle_empty, 1.1
+anm_reload                               = fal_hand_reload, fal_reload
+anm_reload_empty                         = fal_hand_reload_empty, fal_reload_empty
+anm_reload_misfire                       = fal_hand_unjam, fal_unjam
+anm_shot_l                               = fal_hand_shoot, fal_shoot_last
+anm_shots                                = fal_hand_shoot, fal_shoot
+anm_shots_variant1                       = fal_hand_shoot1, fal_shoot
+anm_show                                 = fal_hand_draw, fal_idle
+anm_show_empty                           = fal_hand_draw, fal_idle_empty
+anm_shots_aim                            = fal_hand_shoot_aim, fal_shoot
+anm_shots_aim_l                          = fal_hand_shoot_aim, fal_shoot_last
+
+anm_hide_jammed                        = fal_hand_holster, fal_idle_jam
+anm_idle_jammed                        = fal_hand_idle, fal_idle_jam
+anm_idle_aim_jammed                    = fal_hand_idle_aim, fal_idle_jam
+anm_idle_aim_moving_jammed             = fal_hand_moving, fal_idle_jam, 0.75
+anm_idle_aim_moving_crouch_jammed      = fal_hand_moving, fal_idle_jam, 0.75
+anm_idle_moving_jammed                 = fal_hand_moving, fal_idle_jam
+anm_idle_moving_crouch_jammed          = fal_hand_moving, fal_idle_jam, 0.75
+anm_idle_sprint_jammed                 = fal_hand_sprint, fal_idle_jam, 1.3
+anm_show_jammed                        = fal_hand_draw, fal_idle_jam
+
+anm_bore								= fal_hand_bored, fal_idle
+anm_bore_empty							= fal_hand_bored, fal_idle_empty
+anm_bore_jammed							= fal_hand_jam_inspect, fal_idle_jam
+
+anm_switch_mode							= fal_hand_switch, fal_idle
+anm_switch_mode_empty					= fal_hand_switch, fal_idle_empty
+anm_switch_mode_jammed					= fal_hand_switch, fal_idle_jam
+
+shell_bone                               = gilza
+shell_dir                                = 0, 1, 0
+shell_point                              = 0, 0, 0
+
+fire_bone                                = muzzle
+fire_bone2                               = muzzle
+fire_point                       = -0.000106, 0.002201, 0.016063
+fire_point2                              = 0, 0, 0
