@@ -1,8 +1,10 @@
 # Blindside's PP19 Remodel
 A remodel for Blindside's Weapon Pack - Military. Based on https://steamcommunity.com/sharedfiles/filedetails/?id=3417580010&searchtext=pp19
 
+Blindside's Weapon Reanimation Pack - Military is a hard dependency
+
 CREDITS:
-Model, textures - Prodigy, Zulu/Graham (https://steamcommunity.com/sharedfiles/filedetails/?id=3417580010&searchtext=pp19)
+Model, textures - Prodigy, Zulu/Graham
 Animations, sounds - Blindside
 
 # FAL-Pack
