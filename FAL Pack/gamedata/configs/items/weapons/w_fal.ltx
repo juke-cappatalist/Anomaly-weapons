@@ -33,13 +33,13 @@ weapon_class                             = assault_rifle
 
 hud                                      = wpn_fal_hud
 visual                                   = dynamics\weapons\wpn_fal\wpn_fal_world.ogf
-position                                 = -0.025522, -0.028102, -0.0187
+position                         = -0.017678, -0.009621, 0
 orientation                              = 0, 0, 0
-fire_point                               = -0.00313, 0.080689, 0.753812
+fire_point                       = -0.006849, 0.070893, 0.746071
 fire_point2                              = 0, 0.097, 0.722
 strap_bone0                              = bip01_spine2
 strap_bone1                              = bip01_spine1
-strap_position                           = -0.210247, -0.155589, 0.202926
+strap_position                   = -0.166552, -0.166038, 0.25
 strap_orientation                        = -15, -9, 110
 ph_mass                                  = 4
 
@@ -47,7 +47,7 @@ flame_particles                          = weapons\generic_weapon05
 smoke_particles                          = weapons\generic_shoot_00
 grenade_flame_particles                  = weapons\generic_weapon01
 
-shell_point				                 = -0.026179, 0.080112, 0.133048
+shell_point                      = -0.022932, 0.096549, 0.127056
 shell_dir				                 = 0, 0, 0.4
 shell_particles				             = weapons\762x39
 
@@ -75,14 +75,14 @@ ammo_limit                               = 140
 ammo_mag_size                            = 20
 startup_ammo                             = 90
 
-scopes                                   = 
+scopes                                   = ac10632, acog, eot, c-more
 scope_status                             = 0
 scope_zoom_factor                        = 0
 
 silencer_name                            = wpn_sil_nato
 silencer_status                          = 2
-silencer_x                               = 265
-silencer_y                               = 8
+silencer_x                               = 279
+silencer_y                               = 18
 silencer_light_color                     = 0.6, 0.5, 0.3
 silencer_light_range                     = 0.01
 silencer_light_time                      = 0.2
@@ -172,15 +172,15 @@ zoom_hide_crosshair                      = true
 item_position                            = 0, 0, 0
 item_orientation                         = 0, 0, 0
 
-aim_hud_offset_pos               = -0.072312, 0.035002, -0.057847
-aim_hud_offset_pos_16x9          = -0.072312, 0.035002, -0.057847
-aim_hud_offset_rot               = 0.001361, 0, 0.000354
-aim_hud_offset_rot_16x9          = 0.001361, 0, 0.000354
+aim_hud_offset_pos               = -0.073797, 0.030884, -0.057847
+aim_hud_offset_pos_16x9          = -0.073797, 0.030884, -0.057847
+aim_hud_offset_rot               = -0.002899, 0.000743, 0.000354
+aim_hud_offset_rot_16x9          = -0.002899, 0.000743, 0.000354
 
-hands_orientation                = 0.001, -0.001, -0.001
-hands_orientation_16x9           = 0.001, -0.001, -0.001
-hands_position                   = -0.052364, 0.012235, -0.000288
-hands_position_16x9              = -0.052364, 0.012235, -0.000288
+hands_orientation                = 0.003, -0.00267, -0.002136
+hands_orientation_16x9           = 0.003, -0.00267, -0.002136
+hands_position                   = -0.048885, 0.01772, -0.000426
+hands_position_16x9              = -0.048885, 0.01772, -0.000426
 
 lowered_hud_offset_pos           = 0.10349, -0.013454, 0
 lowered_hud_offset_pos_16x9      = 0.10349, -0.013454, 0
@@ -244,5 +244,98 @@ shell_point                              = 0, 0, 0
 
 fire_bone                                = muzzle
 fire_bone2                               = muzzle
-fire_point                       = -0.000106, 0.002201, 0.016063
+fire_point                               = 0, 0, 0
 fire_point2                              = 0, 0, 0
+
+;------------------------------------------------------------------------------------------------
+[wpn_fal_ac10632]:wpn_fal
+$spawn                                   = "weapons\fal_ac10632"
+
+1icon_layer                              = ac10632
+1icon_layer_x                            = 83
+1icon_layer_y                            = -6
+
+inv_weight                               = 4.56
+
+hud                                      = wpn_fal_ac10632_hud
+visual                                   = dynamics\weapons\wpn_fal\wpn_fal_ac10632_world.ogf
+
+
+[wpn_fal_ac10632_hud]:wpn_fal_hud
+item_visual                              = anomaly_weapons\wpn_fal\wpn_fal_ac10632_hud.ogf
+
+        aim_hud_offset_pos               = -0.073425, 0.008196, -0.057847
+        aim_hud_offset_pos_16x9          = -0.073425, 0.008196, -0.057847
+        aim_hud_offset_rot               = 0.004827, 0.000714, 0.000354
+        aim_hud_offset_rot_16x9          = 0.004827, 0.000714, 0.000354
+
+;------------------------------------------------------------------------------------------------
+[wpn_fal_acog]:wpn_fal
+$spawn                                   = "weapons\fal_acog"
+
+1icon_layer                              = acog
+1icon_layer_x                            = 83
+1icon_layer_y                            = -3
+
+inv_weight                               = 4.8
+
+hud                                      = wpn_fal_acog_hud
+visual                                   = dynamics\weapons\wpn_fal\wpn_fal_world.ogf
+
+scope_status                             = 1
+scope_texture               = wpn_crosshair_acog
+scope_zoom_factor                        = 20
+
+zoom_rotate_time                         = 0.3
+
+
+[wpn_fal_acog_hud]:wpn_fal_ac10632_hud,hud_low_interia
+item_visual                              = anomaly_weapons\wpn_fal\wpn_fal_hud.ogf
+
+        aim_hud_offset_pos               = -0.07385, 0.008549, -0.048531
+        aim_hud_offset_pos_16x9          = -0.07385, 0.008549, -0.048531
+        aim_hud_offset_rot               = 0.007241, 0.000927, 0.000354
+        aim_hud_offset_rot_16x9          = 0.007241, 0.000927, 0.000354
+
+;------------------------------------------------------------------------------------------------
+[wpn_fal_c-more]:wpn_fal
+$spawn                                   = "weapons\fal_c-more"
+
+1icon_layer                              = c-more
+1icon_layer_x                            = 83
+1icon_layer_y                            = 3
+
+inv_weight                               = 4.75
+
+hud                                      = wpn_fal_c-more_hud
+visual                                   = dynamics\weapons\wpn_fal\wpn_fal_c-more_world.ogf
+
+[wpn_fal_c-more_hud]:wpn_fal_hud
+item_visual                              = anomaly_weapons\wpn_fal\wpn_fal_c-more_hud.ogf
+
+        aim_hud_offset_pos               = -0.074598, 0.009325, -0.057847
+        aim_hud_offset_pos_16x9          = -0.074598, 0.009325, -0.057847
+        aim_hud_offset_rot               = 0.004827, 0.000714, 0.000354
+        aim_hud_offset_rot_16x9          = 0.004827, 0.000714, 0.000354
+
+;------------------------------------------------------------------------------------------------
+[wpn_fal_eot]:wpn_fal
+$spawn                                   = "weapons\fal_eot"
+
+1icon_layer                              = eot
+1icon_layer_x                            = 85
+1icon_layer_y                            = 0
+
+inv_weight                               = 4.75
+
+hud                                      = wpn_fal_eot_hud
+visual                                   = dynamics\weapons\wpn_fal\wpn_fal_eot_world.ogf
+
+[wpn_fal_eot_hud]:wpn_fal_hud
+item_visual                              = anomaly_weapons\wpn_fal\wpn_fal_eot_hud.ogf
+
+        aim_hud_offset_pos               = -0.073425, 0.012512, -0.057847
+        aim_hud_offset_pos_16x9          = -0.073425, 0.012512, -0.057847
+        aim_hud_offset_rot               = 0.017773, -0.001529, 0.000354
+        aim_hud_offset_rot_16x9          = 0.017773, -0.001529, 0.000354
+
