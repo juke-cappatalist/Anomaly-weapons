@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="windows-1251"?>
+
+<!--
+	Weapons
+-->
+
+<string_table>
+
+	<string id="st_wpn_amd65">
+		<text>AMD-65</text>
+	</string>
+	<string id="st_wpn_amd65_descr">
+		<text>A Hungarian-manufactured copy of paratrooper AKM. Features a side-folding stock instead of an underfolding one of AKMS, a shorter barrel with unique muzzle-brake and a different handguard. Originally had a vertical grip, but it appears to be missing on this one. On a good side, someone installed an after-market dovetail mount.\n \n
+		%c[ui_gray_2]ATTACHMENTS: \n
+		%c[d_purple] • %c[ui_gray_2] PBS-1 suppressor\n
+		%c[d_purple] • %c[ui_gray_2] EKP-8-02 Kobra, 1P29, PSO-1 scopes\n
+		%c[d_purple] • %c[ui_gray_2] GP-25 grenade launcher (after modification)\n \n</text>
+	</string>
+	
+</string_table>
