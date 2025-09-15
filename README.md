@@ -21,12 +21,19 @@ Animations - Nikola Nikova
 Port of HK416 from Ground Branch to Anomaly using Nikola Nikova's animation set
 
 CREDITS:
-Model, texture - Ground Branch Development Team
+Model, texture - Ground Branch Development Team, BaS (for UBGL, I can only assume they took it from EFT or some other source)
 Animations, Sounds - Nikola Nikova
 
 #AKM Pack (akm.ltx)
 Replacement of Anomaly AKM rifles (those contained in akm.ltx) with a model from Ground Branch. Contains minor balance changes for the replacement of AKMS (alt) - AMD-65.
 
+Changes for AMD-65:
+RoF has been increased from 620 -> 670 (base AKM is 600)
+Fire distance has been reduced from 900 to 700
+Bullet speed from 715 to 690
+Fire dispersion increased from 0.45 to 0.5
+
+Thus AMD-65 is now a slightly shorter-barreled and CQB oriented rifle.
 
 CREDITS:
 AKM:
