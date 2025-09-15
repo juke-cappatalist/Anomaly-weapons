@@ -7,7 +7,7 @@ CREDITS:
 Model, textures - Prodigy, Zulu/Graham
 Animations, sounds - Blindside
 
-#FAL-Pack
+#FAL-Pack (CURRENTLY OBSOLETE)
 FN FAL rifle series redone for vanilla anomaly
 
 Replaces the vanilla Anomaly FN FAL rifle with a new model and Nikola Nikova's animation set.
