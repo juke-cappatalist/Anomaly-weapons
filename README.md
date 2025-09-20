@@ -48,3 +48,7 @@ AMD-65:
 	model, texture - Ground Branch Development Team, Kally
 	sounds - Nikola Nikova
 	animations - Nikola Nikova
+	
+#MASCARA Custom Patches
+Collection of edits for MASsively Clicked Augmented Reality Attachments (https://www.moddb.com/mods/stalker-anomaly/addons/massively-clicked-augmented-reality-attachments-153)
+Mostly consists of new icons
