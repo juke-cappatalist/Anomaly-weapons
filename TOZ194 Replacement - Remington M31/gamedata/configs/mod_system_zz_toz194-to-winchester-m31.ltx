@@ -1,0 +1,80 @@
+![wpn_toz194_snd_shoot]
+snd_2_layer			                                          	  = weapons\mossberg\pump
+
+![wpn_wincheaster1300]
+	snd_draw				                                          = weapons\toz194\toz194_draw
+	snd_holster				                                          = weapons\shotgun_holster
+	snd_reload				                                          = weapons\toz194\toz194_shell
+	snd_reload_misfire				                                  = weapons\remington870\remington870_unjam
+	snd_bore					                                      = weapons\remington870\remington870_unjam
+	snd_close_weapon				                                  = weapons\toz194\toz194_draw
+	snd_open_weapon				                                      = weapons\generic\rifle_historic_draw
+
+	
+	icons_texture                            = ui\ui_icon_win-m31
+	inv_grid_height                          = 1
+	inv_grid_width                           = 4
+	inv_grid_x                               = 0
+	inv_grid_y                               = 0
+	
+	upgr_icon_path                           = ui\ui_icon_win-m31
+	upgr_icon_x                              = 0
+	upgr_icon_y                              = 50
+	upgr_icon_width                          = 200
+	upgr_icon_height                         = 100
+	
+	inv_name                                 = st_wpn_remingtonm31
+	inv_name_short                           = st_wpn_remingtonm31
+	description                              = st_wpn_remingtonm31_descr
+	
+	visual                                   = dynamics\weapons\wpn_winchester1300\wpn_winchester1300_world.ogf
+	
+	fire_point                       = -0.011182, 0.07368, 0.647
+    fire_point2                      = 0, 0.158, 0.647
+    orientation                      = 2.944436, 2.407389, 0.101831
+    position                         = -0.002667, -0.011612, -0.011944
+    strap_position                   = -0.26, -0.1, 0.05
+
+![wpn_toz194_hud]
+
+	item_position                            = 0, 0, 0
+	item_orientation                         = 0, 0, 0
+
+	hands_position                           = 0.01, -0.06, 0.1
+	hands_position_16x9                      = 0.01, -0.06, 0.1
+	hands_orientation                        = 0, 0, 0
+	hands_orientation_16x9                   = 0, 0, 0
+
+	aim_hud_offset_pos               = -0.077581, 0.057366, -0.233127
+    aim_hud_offset_pos_16x9          = -0.077581, 0.057366, -0.233127
+    aim_hud_offset_rot               = -0.011076, -0.000424, 0
+    aim_hud_offset_rot_16x9          = -0.011076, -0.000424, 0
+
+	lowered_hud_offset_pos					 = 0.1, 0, -0.06
+	lowered_hud_offset_rot_16x9				 = 0.1,-0.4,0.2
+
+	lowered_hud_offset_pos_16x9				 = 0.1, 0, -0.06
+	lowered_hud_offset_rot_16x9				 = 0.1,-0.4,0.2
+        
+	anm_add_cartridge                        = blnd_toz194_loop_arms, loop, 1.25
+	anm_close                                = blnd_toz194_close_arms, close
+	anm_hide                                 = blnd_toz194_holster_arms, idle, 1.18
+	anm_idle                                 = blnd_toz194_idle_arms, idle, 0.75
+	anm_idle_aim                             = blnd_toz194_idle_ads_arms
+	anm_idle_aim_moving                      = blnd_toz194_walk_arms, idle, 0.57
+	anm_idle_aim_moving_crouch               = blnd_toz194_walk_arms, idle, 0.57
+	anm_idle_moving                          = blnd_toz194_walk_arms, idle, 0.87
+	anm_idle_moving_crouch                   = blnd_toz194_walk_arms, idle, 0.87
+	anm_idle_sprint                          = blnd_toz194_sprint_arms, idle, 1.2
+	anm_open                                 = blnd_toz194_open_arms, open
+	anm_shots                                = blnd_toz194_shoot_arms, shoot
+	anm_show                                 = blnd_toz194_draw_arms, idle, 1.18
+	anm_bore                                 = blnd_toz194_inspect_arms, inspect
+	anm_reload_misfire                       = blnd_toz194_unjam_arms, unjam
+        
+    shell_bone                  = wpn_body
+    shell_dir                   = 0, 1, 0
+    shell_point                 = 0, 0, 0
+        
+    fire_bone                   = muzzle
+    fire_point                  = 0, 0, 0
